@@ -1,0 +1,19 @@
+* {
+    font-family: sans-serif;
+}
+
+button, .button {
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #555;
+    box-shadow: #0000007f 2px 2px 3px;
+    text-decoration: none;
+    color: #fff;
+}
+
+button:active, .button:active {
+    transform: translate(1px, 1px);
+}

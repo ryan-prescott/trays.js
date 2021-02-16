@@ -1,0 +1,31 @@
+<script src='trays.js'></script>
+<link rel='stylesheet' href='trays.css'>
+<link rel='stylesheet' href='demo.css'>
+<style>
+    body {
+        background-color: #aaa;
+    }
+</style>
+
+<div class='trays' id='myTrays'>
+
+    <div class='tray top open' id='janet'>
+        <h1>Janet</h1>
+        <p>I'm Janet!</p>
+        <p><a class='button' href="#::+freddy">Show me Freddy!</a></p>
+    </div>
+
+    <div class='tray right' id='freddy'>
+        <h1>Freddy</h1>
+        <p>I'm Freddy!</p>
+        <p><a class='button' href="#::-freddy">Take me back to Janet!</a></p>
+        <p><a class='button' href="#::-freddy,janet">Hide me and Janet!</a></p>
+    </div>
+    
+</div>
+
+<script>
+    trays = Trays.load();
+    trays.myTrays.fullscreen();
+
+</script>
