@@ -2,16 +2,31 @@
     font-family: sans-serif;
 }
 
+.container {
+    margin: auto;
+    width: max-content;
+    box-shadow: #0000002a 1px 1px 3px;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+.rack {
+    display: flex;
+    justify-content: space-between;
+}
+
 button, .button {
     display: inline-block;
-    text-transform: uppercase;
+    border: 1px #bbb solid;
     border-radius: 0.5rem;
     padding: 0.5rem;
     font-size: 1rem;
-    background-color: #555;
-    box-shadow: #0000007f 2px 2px 3px;
+    margin: 0.25rem;
+    background-color: #ccc;
+    box-shadow: #0000002a 1px 1px 3px;
     text-decoration: none;
-    color: #fff;
+    color: #000;
 }
 
 button:active, .button:active {

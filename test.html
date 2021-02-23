@@ -1,31 +1,37 @@
 <script src='trays.js'></script>
 <link rel='stylesheet' href='trays.css'>
 <link rel='stylesheet' href='demo.css'>
-<style>
-    body {
-        background-color: #aaa;
-    }
-</style>
 
-<div class='trays' id='myTrays'>
-
-    <div class='tray top open' id='janet'>
-        <h1>Janet</h1>
-        <p>I'm Janet!</p>
-        <p><a class='button' href="#::+freddy">Show me Freddy!</a></p>
+<div class='container'>
+    <div class='trays' id='myTrays'>
+        <div class='tray top open' id='main'>
+            <h1>Hi! Welcome to my beautiful website!</h1>
+            <p>This website uses trays, which means that navigation happens in motion!</p>
+            <a class='button' href='#::~more1'>Check it out!</a>
+        </div>
+        <div class='tray right' id='more1'>
+            <h1>more1</h1>
+        </div>
+        <div class='tray bottom' id='more2'>
+            <h1>more2</h1>
+        </div>
+        <div class='tray left' id='more3'>
+            <h1>more3</h1>
+        </div>
+        <div class='tray top' id='more4'>
+            <h1>more4</h1>
+        </div>
     </div>
 
-    <div class='tray right' id='freddy'>
-        <h1>Freddy</h1>
-        <p>I'm Freddy!</p>
-        <p><a class='button' href="#::-freddy">Take me back to Janet!</a></p>
-        <p><a class='button' href="#::-freddy,janet">Hide me and Janet!</a></p>
+    <div class='rack'>
+        <button onclick='trays.myTrays.previous()'>&lt;</button>
+        <p>Navigate trays</p>
+        <button onclick='trays.myTrays.next()'>&gt;</button>
     </div>
-    
 </div>
+
 
 <script>
     trays = Trays.load();
-    trays.myTrays.fullscreen();
-
+    trays.myTrays.resize(600, 800);
 </script>
