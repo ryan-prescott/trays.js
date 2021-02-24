@@ -75,6 +75,7 @@ class Trays {
                     }
                 }
             }
+            window.location.hash = '';
         }
     }
 
